@@ -1,0 +1,275 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCurrentMarketPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"name": "newCallBuyer",
+				"type": "address"
+			}
+		],
+		"name": "tradeOptionBeforeExpiry",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "optionList",
+		"outputs": [
+			{
+				"name": "assets",
+				"type": "string"
+			},
+			{
+				"name": "strikePrice",
+				"type": "uint8"
+			},
+			{
+				"name": "timeToMaturity",
+				"type": "uint8"
+			},
+			{
+				"name": "riskFreeRate",
+				"type": "uint8"
+			},
+			{
+				"name": "exercised",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "payPremium",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "callOptionBuyer",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "CallOptionPremiumCalculator",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_spotPrice",
+				"type": "uint8"
+			}
+		],
+		"name": "setCurrentMarketPrice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_addr",
+				"type": "address"
+			},
+			{
+				"name": "_assets",
+				"type": "string"
+			},
+			{
+				"name": "_strikePrice",
+				"type": "uint8"
+			},
+			{
+				"name": "_timeToMaturity",
+				"type": "uint8"
+			},
+			{
+				"name": "_riskFreeRate",
+				"type": "uint8"
+			}
+		],
+		"name": "addOption",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"name": "",
+				"type": "uint8"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "callOptionWriter",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_callOptionSeller",
+				"type": "address"
+			},
+			{
+				"name": "_callOptionBuyer",
+				"type": "address"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "addr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "assets",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "strikePrice",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "marketPrice",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "timeToMaturity",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "riskFreeRate",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"name": "exercised",
+				"type": "bool"
+			}
+		],
+		"name": "newOption",
+		"type": "event"
+	}
+]
