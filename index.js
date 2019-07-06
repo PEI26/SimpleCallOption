@@ -50,12 +50,12 @@ async function setCurrentMarketPrice(amount){
 
   server.post('/setCurrentMarketPrice', async(request,response)=>{
       console.log(request)
-      try{
+      
         let value = await dbInstance.setSpotPrice(request.body)
         response.send("Success");  
-      }catch{
-        response.send("failed");  
-      }
+     
+       
+      
      
    })
    
