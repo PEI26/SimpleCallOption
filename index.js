@@ -61,7 +61,7 @@ async function setCurrentMarketPrice(amount){
    
    
    // server
-server.set('port',3000)
+server.set('port',3001)
 
 
-server.listen(3000, ()=>console.log(`server started`))
+server.listen(3001, ()=>console.log(`server started`))
