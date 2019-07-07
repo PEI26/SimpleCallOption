@@ -25,18 +25,14 @@ async function getCurrentMarketPrice(){
     let value = await contract.getCurrentMarketPrice();
     return value
 }
-// getCurrentMarketPrice()
+
 
 async function setCurrentMarketPrice(amount){
     let tx = await newcontract.setCurrentMarketPrice(amount)
     return tx.hash
 }
-// setCurrentMarketPricee();
 
-//event listener
-// newcontract.on("newOption",(addr,  assets,strikePrice,marketPrice,timeToMaturity,riskFreeRate,exercised)=>{
-// console.log("address: ",addr, "assets: ",assets, "strikePrice:",strikePrice,"marketPrice:",marketPrice,"timeToMaturity:",timeToMaturity,"riskFreeRate",riskFreeRate,"exercised",exercised)
-// });
+
 
 //get client endpoint
   server.get('/getCurrentMarketPrice', async(request,response)=>{
