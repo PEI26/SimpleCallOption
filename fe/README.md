@@ -19,6 +19,7 @@ This application provides an interface for users to interact with our simple cal
 
 Get Call: Get current market price/ spot price
 Post Call: Set/add asset and its price
+Hosting to Digital Ocean http://68.183.204.206:3001
 
 ### Database
 
